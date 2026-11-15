@@ -1,0 +1,24 @@
+# A09 Photography — Web Designing Case Study
+
+## Assigned case
+Roll-number ending: 09 | Client: Freelance Photographer | CSS track: Custom CSS (Flexbox/Grid, no framework).
+
+## Files
+- `index.html` — Home page and enquiry form
+- `gallery.html` — Gallery page with descriptions and category filter
+- `styles.css` — Responsive custom CSS, Grid/Flexbox, two media queries and transitions
+- `script.js` — Navigation, gallery filtering, validation, DOM updates and Local Storage
+
+## Run locally
+Open `index.html` in a browser. Internet is required for the remote Unsplash photographs and Google Fonts.
+
+## Important demonstration note
+The enquiry form stores entries in the visitor's browser using Local Storage. It does not send email or store enquiries on a server. The photographs are remote example images; replace them with photographs you have permission to use and update each alt description.
+
+## Publish with GitHub Pages
+1. Create a public GitHub repository named `A09-Photography`.
+2. Upload all four website files to the repository root.
+3. Make at least five meaningful commits (examples: initial structure; add home page; add gallery; add responsive styling; add JavaScript form and filter; improve accessibility/SEO).
+4. Open Settings → Pages.
+5. Under Build and deployment, choose Deploy from a branch, select `main` and `/ (root)`, then Save.
+6. Wait for the published URL shown in Settings → Pages.
