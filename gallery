@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the A09 Photography gallery with landscape, travel and nature photographs and descriptions.">
+  <meta name="keywords" content="photography gallery, landscape photos, travel photos">
+  <title>A09 Photography | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span>A09</span> PHOTOGRAPHY</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a class="active" href="gallery.html">Gallery</a>
+      <a href="index.html#about">About</a><a class="nav-cta" href="index.html#contact">Enquire</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+  <main>
+    <section class="gallery-hero">
+      <p class="eyebrow">THE PORTFOLIO</p>
+      <h1>A world in<br><em>little frames.</em></h1>
+      <p>Each photograph includes a title and a short description so visitors can understand the story behind the image.</p>
+    </section>
+    <section class="section-wrap gallery-section">
+      <div class="gallery-toolbar">
+        <h2>Selected photographs</h2>
+        <label class="filter-label" for="categoryFilter">Filter by category
+          <select id="categoryFilter">
+            <option value="all">All photographs</option>
+            <option value="landscape">Landscape</option>
+            <option value="travel">Travel</option>
+            <option value="nature">Nature</option>
+          </select>
+        </label>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <article class="gallery-item" data-category="landscape">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1100&q=85" alt="Still mountain lake reflecting green hills and distant peaks">
+          <div><span>LANDSCAPE · 01</span><h3>Quiet Horizons</h3><p>A calm mountain lake reflecting the first light of the day.</p></div>
+        </article>
+        <article class="gallery-item" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1100&q=85" alt="Open natural landscape glowing in warm golden sunlight">
+          <div><span>NATURE · 02</span><h3>Golden Hour</h3><p>Warm evening light transforms an ordinary landscape.</p></div>
+        </article>
+        <article class="gallery-item" data-category="travel">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1100&q=85" alt="Mountain valley and lake seen from a scenic hiking viewpoint">
+          <div><span>TRAVEL · 03</span><h3>The Long Way</h3><p>A scenic view discovered along a winding mountain trail.</p></div>
+        </article>
+        <article class="gallery-item" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1100&q=85" alt="Sunlight filtering through a peaceful green forest">
+          <div><span>NATURE · 04</span><h3>Into the Woods</h3><p>Soft sunlight and quiet paths in a green forest.</p></div>
+        </article>
+        <article class="gallery-item" data-category="landscape">
+          <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1100&q=85" alt="Stars scattered across a dark night sky above mountains">
+          <div><span>LANDSCAPE · 05</span><h3>After Dark</h3><p>A night sky filled with stars above a distant ridge.</p></div>
+        </article>
+        <article class="gallery-item" data-category="travel">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1100&q=85" alt="Dramatic snow-covered mountain peaks under a clear sky">
+          <div><span>TRAVEL · 06</span><h3>Above the Clouds</h3><p>Snow-covered peaks rising into a clear mountain sky.</p></div>
+        </article>
+      </div>
+      <p id="emptyGallery" class="form-message" hidden>No photographs match this category.</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="brand brand-footer" href="index.html"><span>A09</span> PHOTOGRAPHY</a>
+    <p>© 2026 A09 Photography · Student web design project</p>
+    <a href="index.html#contact">Send an enquiry ↗</a>
+  </footer>
+</body>
+</html>
